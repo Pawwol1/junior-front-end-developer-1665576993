@@ -1,0 +1,56 @@
+.sidebar {
+  background: white;
+  border-radius: 12px;
+  width: 320px;
+  height: 783px;
+  margin: 5px;
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+    padding-left: 24px;
+  }
+  &__separator {
+    height: 1px;
+    background: #f4f5f7;
+  }
+  &__list {
+    height: 717px;
+    padding: 10px 0 0 24px;
+    list-style: none;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      margin: 5px;
+      background: white;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #f4f5f7;
+      border: 3px white solid;
+    }
+    // custom scrollbar doesn't work in firefox and it will only be visible when there is content to scroll
+    &-el {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      padding-top: 16px;
+      img {
+        margin-right: 5px;
+      }
+    }
+    .active {
+      font-weight: 600;
+    }
+    .blocked {
+      color: #aeb5c1;
+    }
+  }
+}
