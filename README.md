@@ -1,6 +1,6 @@
 ### Go to the directory project:
 
-cd junior-front-end-developer-1665576993t
+cd junior-front-end-developer-1665576993
 
 In the project directory, you can run:
 
