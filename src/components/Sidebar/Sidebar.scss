@@ -1,46 +1,48 @@
 .sidebar {
   background: white;
-  border-radius: 12px;
-  width: 320px;
-  height: 783px;
-  margin: 12px 12px 6px 12px;
+  border-radius: 0.75rem;
+  width: 22vw;
+  height: 87vh;
+  max-height: 49rem;
+  max-width: 20rem;
+  margin: 2rem 0.5rem 2rem 2rem;
   &__title {
     display: flex;
     align-items: center;
-    height: 65px;
-    padding-left: 24px;
+    height: 9%;
+    padding-left: 1.5rem;
   }
   &__separator {
     height: 1px;
     background: #f4f5f7;
   }
   &__list {
-    height: 717px;
-    padding: 10px 0 0 24px;
+    height: 91%;
+    padding: 0.625rem 0 0 1.5rem;
     list-style: none;
     overflow-y: auto;
     &::-webkit-scrollbar {
-      width: 10px;
+      width: 0.625rem;
     }
     &::-webkit-scrollbar-track {
-      margin: 5px;
+      margin: 0.3125rem;
       background: white;
     }
     &::-webkit-scrollbar-thumb {
-      border-radius: 8px;
+      border-radius: 0.5rem;
       background: #f4f5f7;
-      border: 3px white solid;
+      border: 0.1625rem white solid;
     }
     // custom scrollbar doesn't work in firefox and it will only be visible when there is content to scroll
     &-el {
       display: flex;
       align-items: center;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 500;
-      line-height: 18px;
-      padding-top: 16px;
+      line-height: 1, 125rem;
+      padding-top: 1rem;
       img {
-        margin-right: 5px;
+        margin-right: 0.3125rem;
       }
     }
     .active {
