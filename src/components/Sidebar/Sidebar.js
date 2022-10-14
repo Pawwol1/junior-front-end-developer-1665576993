@@ -1,5 +1,5 @@
 import React from 'react';
-import data, {sidebarIcons} from '../../data/data'
+import data, { sidebarIcons } from '../../data/data';
 import './Sidebar.scss';
 
 function Sidebar() {

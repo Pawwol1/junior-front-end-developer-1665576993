@@ -4,8 +4,6 @@ import MessageList from '../MessageList/MessageList';
 import './BusinessContextTab.scss';
 
 function BusinessContextTab() {
- 
-
   return (
     <div className="businessContextTab">
       <div className="businessContextTab__title">
@@ -15,10 +13,7 @@ function BusinessContextTab() {
         </h2>
       </div>
       <div className="businessContextTab__separator" />
-      <div className="businessContextTab__messageBox">
-        <MessageList/>
-        <div className="businessContextTab__messageBox-msg"></div>
-      </div>
+      <MessageList />
     </div>
   );
 }

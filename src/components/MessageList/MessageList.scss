@@ -1,4 +1,6 @@
 .messageList {
+  display: flex;
+  &__list {
     background: #f4f5f7;
     border-radius: 0px 0px 0px 10px;
     border-left: 4px solid white;
@@ -72,3 +74,4 @@
       }
     }
   }
+}
