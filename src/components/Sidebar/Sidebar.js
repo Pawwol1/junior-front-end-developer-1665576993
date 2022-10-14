@@ -1,14 +1,14 @@
 import React from 'react';
-import sidebarData, { sidebarIcons } from './SidebarData';
+import data, { sidebarIcons } from '../../data/data';
 import './Sidebar.scss';
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <h1 className="sidebar__title">YOUR TASKS</h1>
+      <h2 className="sidebar__title">YOUR TASKS</h2>
       <div className="sidebar__separator" />
       <ul className="sidebar__list">
-        {sidebarData.map((task, id) => {
+        {data.map((task, id) => {
           return (
             <li key={id} className={`sidebar__list-el ${task.status}`}>
               {sidebarIcons.map(
