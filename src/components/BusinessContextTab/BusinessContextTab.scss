@@ -1,23 +1,25 @@
 .businessContextTab {
   background: white;
-  border-radius: 12px;
-  width: 976px;
-  height: 783px;
-  margin: 12px 12px 12px 6px;
+  border-radius: 0.75rem;
+  width: 72vw;
+  height: 87vh;
+  max-height: 49rem;
+  max-width: 65rem;
+  margin: 2rem 2rem 2rem 0.5rem;
   &__title {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    height: 65px;
+    height: 9%;
     color: #0165ff;
-    padding-left: 48px;
+    padding-left: 3rem;
     h2 {
       display: flex;
       align-items: center;
       height: 100%;
       border-bottom: 2px solid #0165ff;
       img {
-        padding-right: 16px;
+        padding-right: 1rem;
       }
     }
   }

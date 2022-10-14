@@ -1,55 +1,66 @@
 .messageList {
   display: flex;
+  height: 91%;
   &__list {
     background: #f4f5f7;
-    border-radius: 0px 0px 0px 10px;
-    border-left: 4px solid white;
-    border-bottom: 4px solid white;
-    height: 717px;
-    width: 325px;
+    border-radius: 0 0 0 0.625rem;
+    border-left: 0.1875rem solid white;
+    border-bottom: 0.1875rem solid white;
+    height: 100%;
+    width: 22vw;
+    max-height: 44.625rem;
+    max-width: 20.375rem;
     list-style: none;
     .msgRead {
       background: inherit;
       box-shadow: none;
-      border-radius: 0px;
+      border-radius: 0;
       h3 {
         color: #242325;
         font-weight: 500;
+      }
+      p {
+        padding-top: 3px;
       }
     }
     .msgActive {
       box-shadow: 0px 4px 6px rgba(84, 84, 84, 0.2);
-      border-radius: 12px;
+      border-radius: 0.75rem;
       h3 {
         color: #242325;
         font-weight: 500;
       }
+      p {
+        padding-top: 3px;
+      }
     }
     li {
       background: white;
-      border-radius: 8px;
+      border-radius: 0.5rem;
       box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
-      height: 104px;
-      width: 304px;
-      margin: 8px;
+      height: 12.5vh;
+      width: 21vw;
+      max-height: 6.5rem;
+      max-width: 19rem;
+      margin: 0.5rem;
       div {
         display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 0.625rem;
+        line-height: 0.875rem;
         color: #6b778c;
-        padding: 14px 0 8px 20px;
+        padding: 0.6875rem 0 0.5rem 1.25rem;
         .newMsgLabel {
-          width: 39px;
-          height: 20px;
+          width: 2.4375rem;
+          height: 1.25rem;
           background: #0165ff;
-          border-radius: 4px;
+          border-radius: 0.25rem;
           padding: 0;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 10px;
+          margin-right: 0.625rem;
           p {
             font-weight: 600;
             text-transform: uppercase;
@@ -59,18 +70,18 @@
       }
       h3 {
         font-weight: 700;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
         color: #0165ff;
-        padding-left: 20px;
+        padding-left: 1.25rem;
       }
       .msgContent {
         height: 40%;
         font-weight: 500;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 0.625rem;
+        line-height: 0.875rem;
         color: #6b778c;
-        padding: 8px 18px 19px 20px;
+        padding: 0.5rem 1.125rem 1.1875rem 1.25rem;
       }
     }
   }
