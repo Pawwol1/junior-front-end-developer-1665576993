@@ -1,10 +1,12 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import data from '../../data/data';
 import Message from '../Message/Message';
 import './MessageList.scss';
 
 function MessageList() {
-  const date1 = new Date(data[3].businessContext[0].created_at.date);
+  const { activeTaskID = 3 } = useParams();
+  const date1 = new Date(data[activeTaskID].businessContext[0].created_at.date);
   const date2 = new Date();
 
   function getDifferenceInDays(date1, date2) {
@@ -16,7 +18,7 @@ function MessageList() {
   return (
     <div className="messageList">
       <ul className="messageList__list">
-        {data[3].businessContext.map((msg, id) => (
+        {data[activeTaskID].businessContext.map((msg, id) => (
           <li
             key={id}
             className={
@@ -42,7 +44,7 @@ function MessageList() {
           </li>
         ))}
       </ul>
-      {data[3].businessContext.map((msg, id) =>
+      {data[activeTaskID].businessContext.map((msg, id) =>
         msg.status === 'active' ? (
           <Message
             key={id}

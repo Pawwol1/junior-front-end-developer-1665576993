@@ -1,14 +1,16 @@
 import React from 'react';
-import Sidebar from './components/Sidebar/Sidebar';
-import BusinessContextTab from './components/BusinessContextTab/BusinessContextTab';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './components/Main';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <BusinessContextTab />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/:activeTaskID" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
