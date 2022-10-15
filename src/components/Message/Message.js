@@ -3,7 +3,7 @@ import User from '../User/User';
 import './Message.scss';
 
 function Message({ author, title, content, createdAt, daysDiff }) {
-  let nbsp = '\u00A0';
+  const nbsp = '\u00A0';
   return (
     <div className="message">
       <h1 className="message__title">{title}</h1>
