@@ -15,6 +15,7 @@
   &__separator {
     height: 1px;
     background: #f4f5f7;
+    margin-bottom: 0.5rem;
   }
   &__list {
     height: 91%;
@@ -39,10 +40,25 @@
       align-items: center;
       font-size: 0.75rem;
       font-weight: 500;
-      line-height: 1, 125rem;
-      padding-top: 1rem;
-      img {
-        margin-right: 0.3125rem;
+      line-height: 1.125rem;
+      width: 17rem;
+      a {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.5rem 0;
+        img {
+          height: 1.103125rem;
+          width: 1rem;
+          margin-right: 0.3125rem;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background: rgba(#0165ff, 0.2);
+        border-radius: 6px;
       }
     }
     .active {
@@ -50,6 +66,7 @@
     }
     .blocked {
       color: #aeb5c1;
+      pointer-events: none;
     }
   }
 }
