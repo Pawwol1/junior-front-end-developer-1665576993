@@ -1,3 +1,6 @@
+Recruitment Task 
+link to deployed app -> https://nerdsfamily-pw.netlify.app/
+
 ### Go to the directory project:
 
 cd junior-front-end-developer-1665576993
